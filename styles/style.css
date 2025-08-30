@@ -41,7 +41,7 @@
   margin: 97.8px 0px;
   border: 2px solid currentColor;
   padding: var(--padding-header) 0px;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -59,6 +59,14 @@
   font-size: var(--logo-fz);
   line-height: 100%;
   text-decoration: none;
+}
+
+.logo-link:focus {
+  outline: none;
+}
+
+.logo-link:focus-visible {
+  outline: solid 2px var(--accent-color);
 }
 
 .logo-item {
@@ -101,38 +109,38 @@
   aspect-ratio: 1 / 1;
 }
 
-.first-filter {
+.filter-shadow-brightness {
   filter: drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8)) brightness(250%);
 }
 
-.second-filter {
+.filter-invert-contrast {
   filter: invert(0.7) contrast(30%);
 }
 
-.third-filter {
+.filter-blur {
   filter: blur(0.2rem);
 }
 
-.fourth-filter {
+.filter-grayscale {
   filter: grayscale(0.8);
 }
 
-.fifth-filter {
+.filter-saturate {
   filter: saturate(158%);
 }
 
-.sixth-filter {
+.filter-hue-rotate {
   filter: hue-rotate(-100deg);
 }
 
-.seventh-filter {
+.filter-sepia {
   filter: sepia(80%);
 }
 
 .label {
   position: absolute;
   opacity: 0.5;
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -187,7 +195,7 @@
 .button__text {
   z-index: 1;
   color: var(--button-element-color);
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -318,7 +326,7 @@
 }
 
 .dialog__text {
-  font-family: var(--font-family-accent), sans-serif;
+  font-family: var(--font-family-accent), fantasy;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -340,11 +348,13 @@
   align-items: center;
   border: 2px solid currentColor;
   padding: 30px 30px;
+  background-color: var(--bg-color);
   min-inline-size: 353px;
 }
 
 .dialog::backdrop {
   opacity: 0.75;
+  background-color: #000000;
 }
 
 .save-icon {
@@ -369,7 +379,7 @@
   display: flex;
   margin-block-start: 30px;
   border: 2px solid currentColor;
-  padding: 6px 130.5px;
+  padding: 12.5px 130.5px;
 }
 
 @media (width <= 375px) {
@@ -388,7 +398,7 @@
   }
 
   .button-ok {
-    padding: 6px 112.5px;
+    padding: 12.5px 112.5px;
   }
 
   .card__title {
