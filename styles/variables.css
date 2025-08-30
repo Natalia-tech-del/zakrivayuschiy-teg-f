@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --font-family-main: Inter;
+  --font-family-accent: "Press Start 2P";
+  --font-weight-text: 410;
+  --font-weight-title: 715;
+  --font-weight-accent: 400;
+  --font-size-main: 18px;
+  --text-color: #000000;
+  --icon-color: #000000;
+  --animation-fill-color: #ff0000;
+  --contour-color: #000000;
+  --accent-color: #000000;
+  --button-element-color: #ffffff;
+  --bg-color: #ffffff;
+  --text-stroke: #ffffff;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(#d3d3d3 0px 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --width: clamp(375px, 260.56px + 30.52vw, 700px);
+  --padding-header: clamp(122px, 119.18px + 0.75vw, 130px);
+  --logo-fz: clamp(3.063rem, calc(2.71rem + 1.502vw), 4.063rem);
+  --logo-item-fz: clamp(0.875rem, calc(0.677rem + 0.845vw), 1.438rem);
+  --card-range: 25px;
+  --section-range: 50.5px;
+}
